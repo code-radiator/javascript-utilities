@@ -35,9 +35,7 @@ and open the template in the editor.
             canvas.setDimensions({width: myImg.width, height: myImg.height});
             canvas.setBackgroundImage(myImg, canvas.renderAll.bind(canvas));
 
-            //loop over all the clusters
-            //for each cluster loop over all the boxes
-            coordinates = '{"x1":832, "y1":80, "x2":880, "y2":110}';
+            coordinates = '{"x1":832, "y1":80, "x2":880, "y2":110}'; // currently static, make it dynamic using ajax etc.
             var x = drawRectangle(canvas, coordinates, 'red');
 
             var rect, isDown, origX, origY;
